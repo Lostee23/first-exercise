@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 forms and Inputs</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS -->
+     <style>
+        body{
+            font-family: 'popins', sans-serif;
+        
+        }
+
+        /* This is the copied style for you in the slack channnel */
+        form{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, select{
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="radio" i]{
+            display: inline;
+        }
+        label[name="Rate_Content"], 
+        label[name="Extra_Comments"], 
+        label[name="Rate_Lecturer"]{
+            display: block;
+        }
+     </style>
+</head>
+<body>
+    <h1> Working with forms and Inputs</h1>
+
+    <!-- This is a form -->
+     <!-- Name, E-mail, Cell, Lecturer, Course, Rate your lecturer, Rate the content, Extra -->
+      <!-- Title -->
+       <h2>Feedback form</h2>
+
+       <!-- Start of our form -->
+        <form action="#">
+            <!-- Full name -->
+            <label for=""name="Name">Enter your full name:</label>
+            <input type="text">  <!-- User enters their name -->
+
+        <!-- Enter e-mail -->
+        <label for="" name="E-mail">Enter your e-mail address:</label>
+        <input type="e-mail" name="E-mail"> <!--User enter their e-mail-->
+
+        <!-- Cellphone number -->
+         <label for=""name="Cell"> enter your cellphone number</label>
+         <input type="number" name="Cell"> <!--Users enters their cellphone number-->
+
+
+         <!-- Lecturer name -->
+          <label for="" name="Lecturer name"> Enter your lecturer's name:</label>
+          <select name="" id="">
+            <option value="Khanyiso_Hamman">Khanyiso Hamman</option>
+            <option value="Matthew_Brown">Matthew Brown</option>
+            <option value="Ruth_N'zola">Ruth N'zola</option>
+          </select>
+
+          <!-- Course -->
+           <label for=""name="Course name">Which course did you complete?:</label>
+        <select>
+           <option value="Foundation module">Foundation module</option>
+           <option value="Frontend web_dev">Frontend web_dev</option>
+           </select>
+
+           <!-- Rate your lecturer -->
+            <label for="" name="Rate_lecturer">Rate your lecturer</label>
+            <input type="radio" name="1" value="1"> <label for="">1</label>
+            <input type="radio" name="2" value="2"> <label for="">2</label>
+            <input type="radio" name="3" value="3"> <label for="">3</label>
+            <input type="radio" name="4" value="4"> <label for="">4</label>
+            <input type="radio" name="5" value="5"> <label for="">5</label>
+
+                <!-- Rate your content -->
+                <label for="" name="Rate_content">Rate your content</label>
+                <input type="radio" name="1" value="1"> <label for="">1</label>
+                <input type="radio" name="2" value="2"> <label for="">2</label>
+                <input type="radio" name="3" value="3"> <label for="">3</label>
+                <input type="radio" name="4" value="4"> <label for="">4</label>
+                <input type="radio" name="5" value="5"> <label for="">5</label>
+
+                <!-- Extra comments -->
+                 <label for="" name="Extra_Comments"> Is there anything you would like to say?</label>
+                 <textarea name="Comments"></textarea>
+        </form>
+</body>
+</html>
